@@ -1,0 +1,60 @@
+.skill__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #eef8fc;
+  color: #000000;
+  padding: 80px 200px;
+  gap: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container {
+  background-color: #ffffff;
+}
+.skill__container h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff615a;
+}
+.skill__container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #482890;
+}
+.skill__desc p {
+  padding-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  width: 600px;
+  line-height: 36px;
+}
+.card__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+  padding: 80px 200px;
+  gap: 70px;
+}
+.frontend__icon img {
+  width: 100px;
+  height: 100px;
+}
+/* .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.card p {
+  line-height: 26px;
+}

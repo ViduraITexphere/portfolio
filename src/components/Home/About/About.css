@@ -1,0 +1,46 @@
+.about__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  color: #000000;
+  padding: 80px 200px;
+  gap: 50px;
+}
+.about__container h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff615a;
+}
+.about__container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #482890;
+}
+
+.about__container p {
+  padding-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.porofile__img img {
+  width: 160px;
+  height: 160px;
+}
+
+@media screen and (max-width: 1670px) {
+  .about__container {
+    padding: 40px 80px;
+  }
+  .about__container h1 {
+    font-size: 2rem;
+  }
+  .porofile__img img {
+    width: 120px;
+    height: 120px;
+  }
+}
