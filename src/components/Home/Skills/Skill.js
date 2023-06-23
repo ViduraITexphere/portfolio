@@ -27,7 +27,7 @@ function Skill({ label }) {
             <h2>Backend Development</h2>
             <p>
               I'm a UI Designer with 8 years of experience creating engaging
-              interfaces for web and mobile applications.
+              interfaces.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ function Skill({ label }) {
             <h2>Frontend Development</h2>
             <p>
               I'm a UI Designer with 8 years of experience creating engaging
-              interfaces for web and mobile applications.
+              interfaces.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ function Skill({ label }) {
             <h2>UI UX Designing</h2>
             <p>
               I'm a UI Designer with 8 years of experience creating engaging
-              interfaces for web and mobile applications.
+              interfaces.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ function Skill({ label }) {
             <h2>Database Managment</h2>
             <p>
               I'm a UI Designer with 8 years of experience creating engaging
-              interfaces for web and mobile applications.
+              interfaces.
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: #eef8fc;
+  background: #f4f2fd;
   color: #000000;
   padding: 80px 200px;
   gap: 60px;
@@ -31,8 +31,9 @@
   padding-top: 20px;
   font-size: 22px;
   font-weight: 400;
-  width: 600px;
+  max-width: 1000px;
   line-height: 36px;
+  color: #000000;
 }
 .card__container {
   display: flex;
