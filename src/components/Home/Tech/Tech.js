@@ -52,17 +52,29 @@ function Tech() {
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Autoplay, Pagination, Navigation]}
             breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+              320: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              375: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+              425: {
+                slidesPerView: 3,
+                spaceBetween: 0,
               },
               768: {
                 slidesPerView: 4,
-                spaceBetween: 40,
+                spaceBetween: 0,
+              },
+              800: {
+                slidesPerView: 5,
+                spaceBetween: 0,
               },
               1024: {
                 slidesPerView: 7,
-                spaceBetween: 50,
+                spaceBetween: 0,
               },
             }}
           >

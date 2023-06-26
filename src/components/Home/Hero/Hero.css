@@ -1,9 +1,11 @@
+/* Default styles */
+
 .hero__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to bottom, #392183, #3a237e);
+  background: linear-gradient(to bottom, #070813, #0f0a42);
   color: #ffffff;
   height: 95vh;
   padding: 0 200px;
@@ -14,7 +16,7 @@
   font-size: 110px;
   font-weight: 600;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  font-family: "Mona";
   line-height: 121px;
   display: flex;
   justify-content: center;
@@ -33,26 +35,32 @@
 .hero__job p {
   font-size: 2.5rem;
   font-weight: 700;
-  font-family: "Inter";
+  font-family: "Mona";
 }
+
 .hero__content p {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 2px;
   color: #ffffff;
 }
+
 .hero__des h4 {
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
   margin-top: 20px;
+  line-height: 24px;
+  font-family: "Mona";
 }
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .hero__btn {
   margin-top: 2rem;
   display: flex;
@@ -66,6 +74,7 @@
   color: #ffffff;
   font-size: 18px;
 }
+
 .hireme__btn {
   margin-top: 2rem;
   display: flex;
@@ -80,18 +89,38 @@
   font-size: 18px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 300px;
-  height: 300px;
-  gap: 10px;
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.2em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.5em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-weight: 400;
+  color: #1b1b1b;
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 28px;
+  line-height: 1;
+  overflow-x: auto;
 }
 
-.grid-item {
-  background-color: #000000;
+.typewriter h1::-webkit-scrollbar {
+  display: none;
 }
+
+.typewriter h1 pre {
+  margin-bottom: 0;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Media queries for mobile responsiveness */
 
 @media screen and (max-width: 1670px) {
   .hero__container {
@@ -114,6 +143,7 @@
   }
   .hero__name h1 {
     font-size: 4.5rem;
+    line-height: 86px;
   }
   .hero__job {
     font-size: 2rem;
@@ -122,12 +152,13 @@
     font-size: 2rem;
   }
 }
+
 @media screen and (max-width: 1100px) {
   .hero__container {
     padding: 0 100px;
   }
   .hero__name h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height: 80px;
   }
   .hero__job {
@@ -143,7 +174,7 @@
     padding: 0 100px;
   }
   .hero__name h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 80px;
   }
   .hero__job {
@@ -152,17 +183,17 @@
   .hero__content p {
     font-size: 1.5rem;
   }
-
   .typewriter h1 {
     font-size: 24px;
   }
 }
+
 @media screen and (max-width: 850px) {
   .hero__container {
-    padding: 0 100px;
+    padding: 0 60px;
   }
   .hero__name h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 80px;
   }
   .hero__job {
@@ -174,9 +205,13 @@
 }
 
 @media screen and (max-width: 570px) {
+  .hero__container {
+    padding: 0 20px;
+  }
   .hero__name h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 60px;
+    margin-top: 0; /* Remove the margin-top that pushes the h1 down */
   }
   .hero__job {
     font-size: 1rem;
@@ -184,53 +219,52 @@
   .hero__content p {
     font-size: 1rem;
   }
-}
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.2em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.5em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  font-weight: 400;
-  color: #1b1b1b;
-  background-color: #ffffff;
-  padding: 20px;
-  font-size: 28px;
-  line-height: 1;
-  overflow-x: auto;
-}
-.typewriter h1::-webkit-scrollbar {
-  display: none;
-}
-
-.typewriter h1 pre {
-  margin-bottom: 0;
-}
-.typewriter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
+  .btn {
+    flex-direction: column;
     width: 100%;
   }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+@media screen and (max-width: 450px) {
+  .hero__container {
+    padding: 0 20px;
+    height: 95vh;
   }
-  50% {
-    border-color: #ff615a;
+  .hero__name h1 {
+    font-size: 3rem;
+    line-height: 52px;
   }
+  .hero__job {
+    font-size: 1rem;
+  }
+  .hero__content p {
+    font-size: 1rem;
+  }
+  .btn {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1px;
+  }
+  .hero__des h4 {
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  .hero__btn {
+    margin-top: 0;
+  }
+  .hireme__btn {
+    margin-top: 15px;
+  }
+  .hero__job p {
+    font-size: 1.5rem;
+  }
+  .hero__job span {
+    font-size: 1.5rem;
+  }
+}
+
+@font-face {
+  font-family: "Mona";
+  src: url("../../../../public/Mona-Sans.ttf");
 }

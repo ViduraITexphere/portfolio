@@ -27,7 +27,8 @@
   height: 300px;
 }
 .project__container .card {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 .card__image {
@@ -72,10 +73,10 @@
   z-index: 1;
 }
 
-.card__arc path {
+/* .card__arc path {
   fill: var(--surface-color);
   d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}
+} */
 
 .card:hover .card__header {
   transform: translateY(0);
@@ -91,7 +92,7 @@
 .card__title {
   font-size: 1em;
   margin: 0 0 0.3em;
-  color: #6a515e;
+  color: #000000;
 }
 
 .card__tagline {
@@ -110,12 +111,12 @@
 .card__description {
   padding: 0 2em 2em;
   margin: 0;
-  color: #d7bdca;
-  font-family: "MockFlowFont";
+  color: #313131;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+  font-size: 14px;
 }
 
 .project__header {
@@ -126,14 +127,12 @@
 
 .project__header h2 {
   font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 400;
   color: #ff615a;
 }
 .project__header h1 {
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 2px;
   color: #482890;
 }
 
@@ -142,5 +141,72 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
-  color: #712890;
+  color: #000000;
+}
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.card__status {
+  font-size: 0.8em;
+  background-color: #20206e;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.project__links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.project__icon {
+  width: 24px;
+  height: 24px;
+  color: #1f1f1f;
+  margin-top: 10px;
+}
+.project__icon:hover {
+  color: #20206e;
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 1370px) {
+  .project__container {
+    padding: 4rem 7vw;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .project__container {
+    padding: 60px 20px;
+  }
+  .project__header h1 {
+    font-size: 2rem;
+  }
+
+  .project__header p {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+  }
+  .cards {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    max-width: 340px;
+    max-height: 340px;
+  }
 }

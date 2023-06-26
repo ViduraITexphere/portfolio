@@ -19,7 +19,7 @@ function Skill({ label }) {
         </div>
       </div>
       <div class="card__container">
-        <div class="card">
+        <div className="card__wrapper">
           <div className="frontend__icon">
             <img src="https://i.postimg.cc/TwDmTFs8/setting.gif" alt="" />
           </div>
@@ -31,7 +31,7 @@ function Skill({ label }) {
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card__wrapper">
           <div className="frontend__icon">
             <img src="https://i.postimg.cc/Jtwkyq9y/html.gif" alt="" />
           </div>
@@ -44,7 +44,7 @@ function Skill({ label }) {
           </div>
         </div>
 
-        <div class="card">
+        <div class="card__wrapper">
           <div className="frontend__icon">
             <img src="https://i.postimg.cc/ZYLn6Jp7/monitor.gif" alt="" />
           </div>
@@ -56,7 +56,7 @@ function Skill({ label }) {
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card__wrapper">
           <div className="frontend__icon">
             <img src="https://i.postimg.cc/1t3mHqpv/database.gif" alt="" />
           </div>

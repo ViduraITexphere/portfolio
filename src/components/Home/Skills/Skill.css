@@ -17,14 +17,12 @@
 }
 .skill__container h2 {
   font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 400;
   color: #ff615a;
 }
 .skill__container h1 {
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 2px;
   color: #482890;
 }
 .skill__desc p {
@@ -56,6 +54,61 @@
   text-align: center;
 } */
 
-.card p {
+.card__wrapper p {
   line-height: 26px;
+}
+
+@media screen and (max-width: 1370px) {
+  .skill__container {
+    padding: 40px 100px;
+  }
+  .card__container {
+    padding: 40px 100px;
+  }
+  .skill__container h1 {
+    font-size: 2rem;
+  }
+  .frontend__icon img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .skill__container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .skill__container h1 {
+    font-size: 2rem;
+  }
+  .card__container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+  .card__container h2 {
+    font-size: 1rem;
+  }
+  .frontend__icon img {
+    width: 100px;
+    height: 100px;
+  }
+  .skill__desc p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .card__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: -20px;
+  }
+  .card__wrapper p {
+    line-height: 22px;
+    color: #575757;
+  }
 }
