@@ -22,7 +22,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -72,7 +72,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -122,7 +122,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -172,7 +172,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -222,7 +222,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -272,7 +272,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -322,7 +322,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />
@@ -372,7 +372,7 @@ function Project() {
         <li>
           <a class="card">
             <img
-              src="https://i.postimg.cc/xTrZKfBk/Desktop-11-1.jpg"
+              src="https://s3-alpha.figma.com/hub/file/2570207387/04a259a2-9e74-4458-809a-7665afe66b4c-cover.png"
               class="card__image"
               alt=""
             />

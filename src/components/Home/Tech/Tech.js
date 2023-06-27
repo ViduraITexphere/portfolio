@@ -32,7 +32,7 @@ function Tech() {
       <div className="slider__container">
         <div className="tech__title">
           <h2>Technologies</h2>
-          <h1>Programming Languages and Frameworks</h1>
+          <h1>Languages and Frameworks</h1>
           <div className="tech__desc">
             <p>
               I'm a UI Designer with 8 years of experience creating engaging

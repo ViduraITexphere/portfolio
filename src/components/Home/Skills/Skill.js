@@ -21,7 +21,7 @@ function Skill({ label }) {
       <div class="card__container">
         <div className="card__wrapper">
           <div className="frontend__icon">
-            <img src="https://i.postimg.cc/TwDmTFs8/setting.gif" alt="" />
+            <img src="https://i.postimg.cc/g0KRvpLv/setting.gif" alt="" />
           </div>
           <div className="frontend__desc">
             <h2>Backend Development</h2>

@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: #f4f2fd;
-  color: #000000;
+  background: linear-gradient(to right, #0c1016, #06060f);
+  color: #ffffff;
   padding: 80px 200px;
   gap: 60px;
   display: flex;
@@ -18,12 +18,12 @@
 .skill__container h2 {
   font-size: 16px;
   font-weight: 400;
-  color: #ff615a;
+  color: #7ee787;
 }
 .skill__container h1 {
   font-size: 3rem;
-  font-weight: 700;
-  color: #482890;
+  font-weight: 600;
+  color: #ffffff;
 }
 .skill__desc p {
   padding-top: 20px;
@@ -31,7 +31,7 @@
   font-weight: 400;
   max-width: 1000px;
   line-height: 36px;
-  color: #000000;
+  color: #d8d8d8;
 }
 .card__container {
   display: flex;

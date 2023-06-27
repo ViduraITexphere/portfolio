@@ -18,8 +18,21 @@ function Hero() {
         aTag.remove();
       });
   };
+
   return (
-    <div className="hero__container" id="Home">
+    <div
+      className="hero__container"
+      id="Home"
+      style={{
+        backgroundImage:
+          "url(https://i.postimg.cc/59YZ4DSp/15292647-5525305.jpg)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        zIndex: "-1",
+      }}
+    >
+      <div className="hero__overlay"></div> {/* Add this overlay element */}
       <div className="hero__name">
         <h1>Full Stack Development Showcase</h1>
       </div>
@@ -35,7 +48,7 @@ function Hero() {
         <h4>
           As a Full Stack Developer, I thrive on the challenge of bridging the
           gap between design and functionality, ensuring that every element of a
-          web application works harmoniously. 
+          web application works harmoniously.
         </h4>
       </div>
       <div className="btn">

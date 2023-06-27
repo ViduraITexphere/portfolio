@@ -5,11 +5,22 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to bottom, #070813, #0f0a42);
+  background: linear-gradient(to bottom, #101430, #0c1016);
   color: #ffffff;
   height: 95vh;
   padding: 0 200px;
   gap: 20px;
+  position: relative;
+}
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom, transparent, #0c1016);
+  z-index: -1;
 }
 
 .hero__name h1 {
@@ -26,7 +37,8 @@
 .hero__job span {
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(to right, #ff615a, #ff615a);
+  /* background: linear-gradient(to right, #ff615a, #ff615a); */
+  background-color: #7ee787;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Inter";
@@ -42,7 +54,7 @@
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #d8d8d8;
 }
 
 .hero__des h4 {
@@ -66,13 +78,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff615a;
+  background-color: #763ec6;
   width: 13rem;
   height: 3.5rem;
-  border-radius: 50px;
+  border-radius: 7px;
   border: none;
   color: #ffffff;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .hireme__btn {
@@ -82,11 +95,12 @@
   align-items: center;
   width: 13rem;
   height: 3.5rem;
-  border-radius: 50px;
+  border-radius: 7px;
   background-color: transparent;
-  border: 2px solid #ff615a;
+  border: 1px solid #763ec6;
   color: #ffffff;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .typewriter h1 {
@@ -252,9 +266,11 @@
   }
   .hero__btn {
     margin-top: 0;
+    width: 100%;
   }
   .hireme__btn {
     margin-top: 15px;
+    width: 100%;
   }
   .hero__job p {
     font-size: 1.5rem;
