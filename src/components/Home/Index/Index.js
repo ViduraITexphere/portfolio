@@ -8,6 +8,7 @@ import Tech from "../Tech/Tech";
 import Project from "../Pro/Project";
 import Contact from "../Contact/Contact";
 import UserExperience from "../ux/UserExperience";
+import Accordion from "../Accordion/Accordion";
 function Index() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Index() {
       <Tech />
       <Project />
       {/* <UserExperience /> */}
+      <Accordion />
       <Contact />
     </div>
   );

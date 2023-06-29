@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
-
+import { motion } from "framer-motion";
 function Hero() {
   const PDF_FILE_URL = "http://localhost:3000/file_resume.pdf";
   const downloadFileAtURL = (url) => {
+    console.log("Downloading file at:", url);
     fetch(url)
       .then((response) => response.blob())
       .then((blob) => {
@@ -19,6 +20,17 @@ function Hero() {
       });
   };
 
+  const moveVarients = {
+    animation: {
+      y: [0, -15],
+      transition: {
+        yoyo: Infinity,
+        duration: 2,
+        delay: 0.5,
+      },
+    },
+  };
+
   return (
     <div
       className="hero__container"
@@ -29,28 +41,38 @@ function Hero() {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        zIndex: "-1",
+        zIndex: "0",
       }}
     >
       <div className="hero__overlay"></div> {/* Add this overlay element */}
-      <div className="hero__name">
+      <motion.div
+        className="hero__name"
+        initial={{ y: -15, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <h1>Full Stack Development Showcase</h1>
-      </div>
+      </motion.div>
       {/* <div class="typewriter">
         <h1>Vidura Ravindranath()</h1>
       </div> */}
       <div className="hero__job">
-        <p>
+        <motion.p variants={moveVarients} animate="animation">
           I'm a <span>Full Stack Developer</span>
-        </p>
+        </motion.p>
       </div>
-      <div className="hero__des">
+      <motion.div
+        className="hero__des"
+        initial={{ x: 0, opacity: 0 }}
+        whileInView={{ x: [-25, 0], opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <h4>
           As a Full Stack Developer, I thrive on the challenge of bridging the
           gap between design and functionality, ensuring that every element of a
           web application works harmoniously.
         </h4>
-      </div>
+      </motion.div>
       <div className="btn">
         <button
           className="hero__btn"
