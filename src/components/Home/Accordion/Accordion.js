@@ -36,7 +36,19 @@ const Accordion = ({ items }) => {
     },
   ];
   return (
-    <div className="accordion__container">
+    <div className="accordion__container" id="FAQ">
+      <div className="project__header">
+        <h2>FAQ</h2>
+        <h1>
+          Frequently Asked <span>Questions</span>
+        </h1>
+        <div className="project__desc">
+          <p>
+            I'm a UI Designer with 8 years of experience creating engaging
+            interfaces for web and mobile applications.
+          </p>
+        </div>
+      </div>
       <div className="accordion">
         {accordionItems.map((item, index) => (
           <AccordionItem

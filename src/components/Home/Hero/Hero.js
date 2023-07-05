@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Hero.css";
-import { motion } from "framer-motion";
+import "./Cards/Cards.css";
+import { m, motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
+import { HiDownload } from "react-icons/hi";
+import { FaHandshake } from "react-icons/fa";
+
 function Hero() {
+  const [mobile, setMobile] = useState(false);
   const PDF_FILE_URL = "http://localhost:3000/file_resume.pdf";
   const downloadFileAtURL = (url) => {
     console.log("Downloading file at:", url);
@@ -20,7 +26,7 @@ function Hero() {
       });
   };
 
-  const moveVarients = {
+  const moveVariants = {
     animation: {
       y: [0, -15],
       transition: {
@@ -31,59 +37,139 @@ function Hero() {
     },
   };
 
+  const [scrollStarted, setScrollStarted] = useState(false);
+  const controls = useAnimation();
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > 2) {
+        setScrollStarted(true);
+      } else {
+        setScrollStarted(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scrollStarted) {
+      controls.start({ opacity: 1, y: mobile ? -70 : -40 });
+    } else {
+      controls.start({ opacity: 0, y: 10 });
+    }
+  }, [scrollStarted, controls]);
+
+  const browserWidth = window.innerWidth;
+  useEffect(() => {
+    if (browserWidth) {
+      if (browserWidth < 900) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    }
+  }, [browserWidth]);
+
   return (
-    <div
-      className="hero__container"
-      id="Home"
-      style={{
-        backgroundImage:
-          "url(https://i.postimg.cc/59YZ4DSp/15292647-5525305.jpg)",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        zIndex: "0",
-      }}
-    >
-      <div className="hero__overlay"></div> {/* Add this overlay element */}
-      <motion.div
-        className="hero__name"
-        initial={{ y: -15, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+    <div>
+      <div
+        className="hero__container"
+        id="Home"
+        style={{
+          backgroundImage:
+            "url(https://github.githubassets.com/images/modules/site/security/grid2.svg)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          zIndex: "0",
+        }}
       >
-        <h1>Full Stack Development Showcase</h1>
-      </motion.div>
-      {/* <div class="typewriter">
+        <motion.div
+          className="hero__name"
+          initial={{ y: -15, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <h1>Full Stack Development Showcase</h1>
+        </motion.div>
+        {/* <div class="typewriter">
         <h1>Vidura Ravindranath()</h1>
       </div> */}
-      <div className="hero__job">
-        <motion.p variants={moveVarients} animate="animation">
-          I'm a <span>Full Stack Developer</span>
-        </motion.p>
+        <div className="hero__job">
+          <motion.p variants={moveVariants} animate="animation">
+            I'm a <span>Full Stack Developer</span>
+          </motion.p>
+        </div>
+        <div className="hero__des">
+          <h4>
+            As a Full Stack Developer, I thrive on the challenge of bridging the
+            gap between design and functionality, ensuring that every element of
+            a web application works harmoniously.
+          </h4>
+        </div>
+        <div className="btn">
+          <button
+            className="hero__btn"
+            onClick={() => {
+              downloadFileAtURL(PDF_FILE_URL);
+            }}
+          >
+            <HiDownload className="download__icon" size={24} />
+            Download CV
+          </button>
+          <button className="hireme__btn">
+            <FaHandshake className="hireme__icon" size={24} />
+            Hire Me
+          </button>
+        </div>
       </div>
       <motion.div
-        className="hero__des"
-        initial={{ x: 0, opacity: 0 }}
-        whileInView={{ x: [-25, 0], opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        className="skill__tabs"
+        initial={{ opacity: 0 }}
+        animate={controls}
+        transition={{ duration: 0.2, delay: 0.1 }}
       >
-        <h4>
-          As a Full Stack Developer, I thrive on the challenge of bridging the
-          gap between design and functionality, ensuring that every element of a
-          web application works harmoniously.
-        </h4>
+        <div className="skill__tab">
+          <img src="https://i.postimg.cc/KctPk3Mr/devops-1.png" />
+          <h3>Frontend Development</h3>
+
+          <div className="skill__tab__desc">
+            <p>
+              As a frontend developer, I have a strong command of HTML, CSS,
+              JavaScript and React JS. I specialize in creating responsive and
+              visually interfaces.
+            </p>
+          </div>
+        </div>
+        <div className="skill__tab">
+          <img src="https://i.postimg.cc/CKyDxFx6/software.png" />
+          <h3>Backend Development</h3>
+          <div className="skill__tab__desc">
+            <p>
+              In backend development, I excel in building server-side
+              applications using Node.js, Express.js, and MongoDB.
+            </p>
+          </div>
+        </div>
+        <div className="skill__tab">
+          <img src="https://i.postimg.cc/xCQ9CZH2/strategy.png" />
+          <h3>UI/UX Designing</h3>
+          <div className="skill__tab__desc">
+            <p>
+              I create engaging and intuitive digital experiences with a strong
+              focus on aesthetics and user-centric design principles.
+            </p>
+          </div>
+        </div>
       </motion.div>
-      <div className="btn">
-        <button
-          className="hero__btn"
-          onClick={() => {
-            downloadFileAtURL(PDF_FILE_URL);
-          }}
-        >
-          Download CV
-        </button>
-        <button className="hireme__btn">Hire Me</button>
-      </div>
     </div>
   );
 }

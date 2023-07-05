@@ -1,7 +1,7 @@
 .navbar__container {
-  position: fixed;
+  position: sticky;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   background: transparent;
   color: #ffffff;
@@ -81,10 +81,10 @@
 } */
 
 .navbar__container.scrolled {
-  background-color: #0a0911;
+  background-color: #0c0f14;
   color: #331c7a;
   height: 70px;
-  border-bottom: 0.5px solid #161616;
+  border-bottom: 0.5px solid #1f1f1f;
 
   /* Add the following styles for the scroll effect */
   /* transform: translateY(-100%); */

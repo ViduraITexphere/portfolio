@@ -18,17 +18,22 @@
 }
 .contact__container .contact__data h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  letter-spacing: -2.16px;
 }
 .contact__container .contact__data p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
   padding-top: 20px;
   font-size: 22px;
   font-weight: 400;
   max-width: 1000px;
   line-height: 36px;
   color: #acacac;
+  padding: 20px 0;
 }
 .contact-form {
   /* min-width: 450px; */

@@ -1,11 +1,11 @@
 :root {
   --surface-color: #1d1d1f;
-  --curve: 12;
+  --curve: 8;
 }
 
 .project__container {
-  background-color: #0c0f14;
-  padding: 4rem 10vw;
+  background-color: #0d1117;
+  padding: 8rem 10vw 1rem 10vw;
 }
 .cards {
   display: grid;
@@ -23,7 +23,7 @@
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
-  width: 300px;
+  width: 100%;
   height: 300px;
   /* border: 0.5px solid #3d3d3d; */
 }
@@ -36,6 +36,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  background-color: #ffffff;
 }
 
 .card__overlay {
@@ -60,7 +61,6 @@
   align-items: center;
   gap: 2em;
   padding: 2em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;
   background-color: var(--surface-color);
   transform: translateY(-100%);
   transition: 0.2s ease-in-out;
@@ -127,17 +127,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .project__header h2 {
   font-size: 16px;
   font-weight: 400;
   color: #7ee787;
+  margin-bottom: 10px;
 }
 .project__header h1 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 800;
+  font-family: "Mona";
   color: #ffffff;
+  letter-spacing: -2.16px;
 }
 
 .project__header p {
@@ -151,7 +156,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .card__status {
   font-size: 0.8em;
@@ -170,17 +175,17 @@
 .project__icon {
   width: 24px;
   height: 24px;
-  color: #1f1f1f;
+  color: #3b3b3b;
   margin-top: 10px;
 }
 .project__icon:hover {
-  color: #20206e;
+  color: #080808;
   transform: scale(1.4);
 }
 
 @media screen and (max-width: 1370px) {
   .project__container {
-    padding: 4rem 7vw;
+    padding: 10rem 7vw;
   }
 }
 
@@ -189,7 +194,7 @@
     padding: 60px 20px;
   }
   .project__header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .project__header p {

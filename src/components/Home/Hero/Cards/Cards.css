@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #1f2631; */
+  background: linear-gradient(
+    to bottom,
+    #0d1117,
+    #0d1117,
+    #0d1117,
+    #141a20,
+    #141a20,
+    #141a20,
+    #141a20,
+    #141a20
+  );
+}
+.skill__tabs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: #0d1117; */
+  /* background: linear-gradient(to bottom, #0d1117, #0c0c0c); */
+  padding: 0 20px;
+  gap: 20px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.skill__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  min-width: 260px;
+  height: auto;
+  padding: 30px;
+  border-radius: 8px;
+  /* background-color: #141a20; */
+  background: linear-gradient(to bottom, #06090e, #141a2000);
+  /* border: 1px solid rgba(255, 255, 255, 0.171); */
+  color: #f3f3f3;
+  transition: background-color 0.3s ease;
+  position: relative; /* Added to establish a stacking context */
+  z-index: 1; /* Ensure the cards appear on top of the gradient */
+}
+
+.skill__tab p {
+  display: flex;
+  align-items: center;
+  color: #d8d8d8;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.skill__tab h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+}
+
+.skill__tab img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 900px) {
+  .skill__tabs {
+    flex-direction: column;
+    /* background: none; */
+    /* background-color: #0d1117; */
+  }
+  .skill__tab {
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #090911);
+  }
+  body {
+    background: linear-gradient(
+      to bottom,
+      #15171b,
+      #11171f,
+      #131a22,
+      #11171f,
+      #090b11,
+      #090911,
+      #090911,
+      #090911
+    );
+  }
+  .skill__tab h3 {
+    font-size: 24px;
+  }
+}

@@ -15,10 +15,9 @@ function Index() {
       <Navbar />
       <Hero />
       <About />
-      <Skill />
+      {/* <Skill /> */}
       <Tech />
       <Project />
-      {/* <UserExperience /> */}
       <Accordion />
       <Contact />
     </div>

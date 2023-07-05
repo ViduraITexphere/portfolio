@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0c0f14;
+  background-color: #0d1117;
   padding: 100px;
 }
 .accordion {
   background-color: #ccc;
   width: 900px;
+  margin: 80px 0;
 }
 
 .accordion-item {
@@ -19,7 +20,7 @@
   display: flex;
   cursor: pointer;
   padding: 10px;
-  background-color: #0c0f14;
+  background-color: #0d1117;
   color: #ccc;
   padding: 20px 0;
   gap: 20px;
