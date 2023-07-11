@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 
 function Hero() {
   const [mobile, setMobile] = useState(false);
-  const PDF_FILE_URL = "http://localhost:3000/file_resume.pdf";
+  const PDF_FILE_URL = "https://localhost:3000/file_resume.pdf";
   const downloadFileAtURL = (url) => {
     console.log("Downloading file at:", url);
     fetch(url)
@@ -125,7 +125,7 @@ function Hero() {
             <HiDownload className="download__icon" size={24} />
             Download CV
           </button>
-          <Link to="Contact">
+          <Link to="Contact" className="hireme__link">
             <button className="hireme__btn">
               <FaHandshake className="hireme__icon" size={24} />
               Hire Me

@@ -241,4 +241,8 @@
   .hero__job span {
     font-size: 1.5rem;
   }
+  .hireme__link {
+    display: block;
+    width: 100%;
+  }
 }
