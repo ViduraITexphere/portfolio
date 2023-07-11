@@ -1,10 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import "./Cards/Cards.css";
 import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { FaHandshake } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Hero() {
   const [mobile, setMobile] = useState(false);
@@ -39,7 +40,6 @@ function Hero() {
 
   const [scrollStarted, setScrollStarted] = useState(false);
   const controls = useAnimation();
-  const ref = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +65,7 @@ function Hero() {
     } else {
       controls.start({ opacity: 0, y: 10 });
     }
-  }, [scrollStarted, controls]);
+  }, [scrollStarted, controls, mobile]);
 
   const browserWidth = window.innerWidth;
   useEffect(() => {
@@ -125,10 +125,12 @@ function Hero() {
             <HiDownload className="download__icon" size={24} />
             Download CV
           </button>
-          <button className="hireme__btn">
-            <FaHandshake className="hireme__icon" size={24} />
-            Hire Me
-          </button>
+          <Link to="Contact">
+            <button className="hireme__btn">
+              <FaHandshake className="hireme__icon" size={24} />
+              Hire Me
+            </button>
+          </Link>
         </div>
       </div>
       <motion.div

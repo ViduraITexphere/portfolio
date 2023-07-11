@@ -1,39 +1,9 @@
 import { Grid } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./About.css";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 function About() {
-  // const [scrollStarted, setScrollStarted] = useState(false);
-  // const controls = useAnimation();
-  // const ref = useRef(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop =
-  //       window.pageYOffset || document.documentElement.scrollTop;
-  //     if (scrollTop > 1800) {
-  //       setScrollStarted(true);
-  //     } else {
-  //       setScrollStarted(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   if (scrollStarted) {
-  //     controls.start({ opacity: 1, y: 0 });
-  //   } else {
-  //     controls.start({ opacity: 0, y: 10 });
-  //   }
-  // }, [scrollStarted, controls]);
-
   return (
     <Grid container className="about__container" id="About">
       <Grid item xs={12} md={12}>
