@@ -41,7 +41,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/sxkD5Ywc/189620029-0c4fd6e8-4880-4bf0-b258-ccb194396127.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -84,7 +84,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/N0MgKGcb/Frame-1-4.png cx"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -129,7 +129,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/Sx8Lg1t2/Frame-1-6.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -175,7 +175,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/pdhxhSVG/Frame-1-11.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -218,7 +218,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/PrCPzSqD/Frame-1-13.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -266,7 +266,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/fWxR7C12/Frame-1-14.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -319,7 +319,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/Pxv9b6xS/Frame-1-15.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -364,7 +364,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/HstZMJHc/Frame-1-19.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -412,7 +412,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/nh35N4PP/Frame-1-20.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">
@@ -460,7 +460,7 @@ function Project() {
             <img
               src="https://i.postimg.cc/9MBwmfHz/Frame-1-21.png"
               class="card__image"
-              alt=""
+              alt="project"
             />
             <div class="card__overlay">
               <div class="card__header">

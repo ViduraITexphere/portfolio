@@ -77,9 +77,6 @@ function About() {
           </motion.Grid>
         </Grid>
       </Grid>
-      {/* <Grid item xs={12} md={6} className="porofile__img">
-        <img src="https://i.postimg.cc/1RCMzXK8/Untitled-7.png" alt="profile" />
-      </Grid> */}
     </Grid>
   );
 }

@@ -55,9 +55,6 @@ const Navbar = () => {
   }, []);
   return (
     <nav className={`navbar__container ${scrolled ? "scrolled" : ""}`}>
-      {/* <div className={`logo ${scrolled ? "zoom" : ""}`}>
-        <img src="https://i.postimg.cc/rwR3N3gm/accusoft.png" alt="logo" />
-      </div> */}
       <ul className={`navbar ${scrolled ? "zoom" : ""}`}>
         {menuItems.map((menu) => (
           <li>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Hero.css";
 import "./Cards/Cards.css";
-import { m, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { FaHandshake } from "react-icons/fa";
@@ -138,7 +138,7 @@ function Hero() {
         transition={{ duration: 0.2, delay: 0.1 }}
       >
         <div className="skill__tab">
-          <img src="https://i.postimg.cc/KctPk3Mr/devops-1.png" />
+          <img src="https://i.postimg.cc/KctPk3Mr/devops-1.png" alt="skills" />
           <h3>Frontend Development</h3>
 
           <div className="skill__tab__desc">
@@ -150,7 +150,7 @@ function Hero() {
           </div>
         </div>
         <div className="skill__tab">
-          <img src="https://i.postimg.cc/CKyDxFx6/software.png" />
+          <img src="https://i.postimg.cc/CKyDxFx6/software.png" alt="skills" />
           <h3>Backend Development</h3>
           <div className="skill__tab__desc">
             <p>
@@ -160,7 +160,7 @@ function Hero() {
           </div>
         </div>
         <div className="skill__tab">
-          <img src="https://i.postimg.cc/xCQ9CZH2/strategy.png" />
+          <img src="https://i.postimg.cc/xCQ9CZH2/strategy.png" alt="skills" />
           <h3>UI/UX Designing</h3>
           <div className="skill__tab__desc">
             <p>
