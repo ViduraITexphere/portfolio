@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 
 function Hero() {
   const [mobile, setMobile] = useState(false);
-  const PDF_FILE_URL = "https://localhost:3000/file_resume.pdf";
+  const PDF_FILE_URL = "https://viduraportfolio.tech/file_resume.pdf";
   const downloadFileAtURL = (url) => {
     console.log("Downloading file at:", url);
     fetch(url)
