@@ -7,7 +7,7 @@
   padding: 100px;
 }
 .accordion {
-  background-color: #ccc;
+  background-color: #0d1117;
   width: 900px;
   margin: 80px 0;
 }
@@ -30,12 +30,15 @@
 
 .accordion-content {
   padding: 10px 40px;
-  background-color: #0c0f14;
+  background-color: #0d1117;
   color: #ccc;
   line-height: 28px;
 }
 .accordion-title {
   user-select: none;
+}
+.project__desc {
+  padding: 0 100px;
 }
 
 @media screen and (max-width: 470px) {
@@ -50,5 +53,8 @@
   }
   .accordion-content {
     font-size: 16px;
+  }
+  .project__desc {
+    padding: 0;
   }
 }

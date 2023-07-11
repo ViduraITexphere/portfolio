@@ -25,20 +25,39 @@ import { FaSass } from "react-icons/fa";
 import { SiSocketdotio } from "react-icons/si";
 // Import Swiper styles
 import "swiper/css";
+import { motion } from "framer-motion";
 
 function Tech() {
   return (
     <div className="tech__container" id="Technologies">
       <div className="slider__container">
         <div className="tech__title">
-          <h2>Technologies</h2>
-          <h1>Languages and Frameworks</h1>
-          <div className="tech__desc">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ y: [50, 0], opacity: 1 }}
+            transition={{ duration: 0.1, delay: 0.1 }}
+          >
+            Technologies
+          </motion.h2>
+          <motion.h1
+            initial={{ opacity: 0 }}
+            whileInView={{ y: [50, 0], opacity: 1 }}
+            transition={{ duration: 0.1, delay: 0.1 }}
+          >
+            Languages and Frameworks
+          </motion.h1>
+          <motion.div
+            className="tech__desc"
+            initial={{ opacity: 0 }}
+            whileInView={{ y: [50, 0], opacity: 1 }}
+            transition={{ duration: 0.1, delay: 0.1 }}
+          >
             <p>
-              I'm a UI Designer with 8 years of experience creating engaging
-              interfaces for web and mobile applications.
+              My journey in software development has been an exciting adventure,
+              characterized by continuous growth and acquisition of technical
+              skills.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="tech__slider">
           <Swiper

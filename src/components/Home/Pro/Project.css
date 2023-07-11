@@ -5,7 +5,7 @@
 
 .project__container {
   background-color: #0d1117;
-  padding: 8rem 10vw 1rem 10vw;
+  padding: 15rem 10vw 1rem 10vw;
 }
 .cards {
   display: grid;
@@ -36,7 +36,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  background-color: #ffffff;
+  background-color: #8d6dae;
 }
 
 .card__overlay {
@@ -161,7 +161,7 @@
 .card__status {
   font-size: 0.8em;
   background-color: #2b2b2e;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -185,7 +185,7 @@
 
 @media screen and (max-width: 1370px) {
   .project__container {
-    padding: 10rem 7vw;
+    padding: 10rem 7vw 1rem 7vw;
   }
 }
 

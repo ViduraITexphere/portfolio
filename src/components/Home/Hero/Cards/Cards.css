@@ -7,11 +7,11 @@ body {
     #0d1117,
     #0d1117,
     #0d1117,
-    #141a20,
-    #141a20,
-    #141a20,
-    #141a20,
-    #141a20
+    #0d1117,
+    #0d1117,
+    #0d1117,
+    #0d1117,
+    #0d1117
   );
 }
 .skill__tabs {
@@ -37,7 +37,7 @@ body {
   padding: 30px;
   border-radius: 8px;
   /* background-color: #141a20; */
-  background: linear-gradient(to bottom, #06090e, #141a2000);
+  background: linear-gradient(to bottom, #21262d, #141a2000);
   /* border: 1px solid rgba(255, 255, 255, 0.171); */
   color: #f3f3f3;
   transition: background-color 0.3s ease;
