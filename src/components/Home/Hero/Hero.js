@@ -59,6 +59,8 @@ function Hero() {
       <div className="hero__job">
         <motion.p variants={moveVarients} animate="animation">
           I'm a <span>Full Stack Developer</span>
+          <br />
+          <span>React</span> | <span>Node</span> | <span>Express</span> |{" "}
         </motion.p>
       </div>
       <motion.div
